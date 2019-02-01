@@ -8,16 +8,3 @@ Test
 |Bill       |         |X            |         |
 |John       |         |             |X        |
 
-
-!-SkillsOverview.cs-!
-{{{namespace GameManagementTest
-{
-    public class SkillsOverview
-    {
-        private string _player;
-
-        public object Get(string requestedSkill) => PlayerManagementDriver.PlayerIfSkill(_player) == requestedSkill ? "X" : string.Empty;
-        public void Set(string name, string value) => _player = value;
-    }
-}
-}}}

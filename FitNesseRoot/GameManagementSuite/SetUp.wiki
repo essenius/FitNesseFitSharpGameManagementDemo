@@ -2,7 +2,6 @@
 |GameManagementTest|
 
 !|library                |
-|TestSlim.EchoFixture    |
 |player management driver|
 
 |Define table type                     |
@@ -19,5 +18,3 @@
 |John       |advanced    |true    |
 |JohnJohn   |beginner    |true    |
 
-!-PlayerManagementDriver.cs-!: see DuplicateCheck
-!-EchoFixture.cs-!: see <FitSharpDemos.FeatureDemoSuite.EchoTest

@@ -24,21 +24,3 @@ Test
 | John   |
 | Julie  |
 
-!-PlayerManagementDriver.cs-!: see DuplicateCheck
-!-PlayerWithSkill.cs-!
-{{{using System.Collections.Generic;
-using System.Linq;
-
-namespace GameManagementTest
-{
-    public class PlayersWithSkill
-    {
-        readonly string _level;
-
-        public PlayersWithSkill(string skillLevel) => _level = skillLevel;
-
-        public List<object> Query() => StaticGame.Players.WithLevel(_level)
-            .Select(p => new List<object> {new List<object> {"Player", p.Name}}).Cast<object>().ToList();
-    }
-}
-}}}

@@ -54,5 +54,7 @@ namespace GameManagementTest
             player.Level = skillLevel;
             return true;
         }
+
+        public static object Echo(object input) => input;
     }
 }
