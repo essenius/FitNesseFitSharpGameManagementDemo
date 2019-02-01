@@ -1,0 +1,44 @@
+!path "GameManagementTest\GameManagementTest.dll;TestSlim\TestSlim.dll"
+!contents -R2 -g -p -f -h
+'''Application under test:'''
+Player.cs
+{{{namespace GameManagement
+{
+    public class Player
+    {
+        public Player(string playerName, string skillLevel)
+        {
+            Name = playerName;
+            Level = skillLevel;
+        }
+
+        public string Name { get; }
+
+        public string Level { get; set; }
+
+        public override bool Equals(object obj)
+        {
+            var other = obj as Player;
+            return other != null && Name.Equals(other.Name);
+        }
+
+        public override int GetHashCode() => Name.GetHashCode();
+    }
+}
+}}}
+!-PlayerCollection.cs-!
+{{{using System.Collections.Generic;
+using System.Linq;
+
+namespace GameManagement
+{
+    public class PlayerCollection : HashSet<Player>
+    {
+        public Player FindOnName(string playerName) => 
+            (from Player p in this where p.Name == playerName select p).FirstOrDefault();
+
+        public IEnumerable<Player> WithLevel(string level) => 
+            from Player p in this where p.Level == level select p;
+    }
+}
+}}}

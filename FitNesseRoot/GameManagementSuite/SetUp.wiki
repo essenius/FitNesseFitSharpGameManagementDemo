@@ -1,0 +1,23 @@
+!| import          |
+|GameManagementTest|
+
+!|library                |
+|TestSlim.EchoFixture    |
+|player management driver|
+
+|Define table type                     |
+|add players       |as Decision        |
+|overview          |as Table           |
+|players with skill|as Query           |
+|skills overview   |as Dynamic Decision|
+
+!|Add Players                     |
+|Player Name|Skill       |Success?|
+|Steve      |beginner    |true    |
+|Julie      |intermediate|true    |
+|Bill       |intermediate|true    |
+|John       |advanced    |true    |
+|JohnJohn   |beginner    |true    |
+
+!-PlayerManagementDriver.cs-!: see DuplicateCheck
+!-EchoFixture.cs-!: see <FitSharpDemos.FeatureDemoSuite.EchoTest

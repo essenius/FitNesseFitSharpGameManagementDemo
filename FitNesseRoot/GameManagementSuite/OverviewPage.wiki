@@ -1,0 +1,19 @@
+---
+Test
+---
+| overview |
+
+!-Overview.cs-!
+{{{using System.Collections.Generic;
+
+namespace GameManagementTest
+{
+    public class Overview
+    {
+        public List<List<string>> DoTable(List<List<string>> table) => new List<List<string>>
+        {
+            new List<string> { "report:Number of players", "pass:" + StaticGame.Players.Count }
+        };
+    }
+}
+}}}

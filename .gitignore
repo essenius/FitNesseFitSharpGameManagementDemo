@@ -3,6 +3,15 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# FitNesse standard content and binaries
+FitNesseRoot/FitNesse/
+FitNesseRoot/RecentChanges/
+FitNesseRoot/TemplateLibrary/
+FitNesseRoot/files/testResults/
+Plugins/
+Fixtures/
+TestOutput/
+
 # User-specific files
 *.suo
 *.user

@@ -1,0 +1,71 @@
+---
+Test
+---
+Attempting to register an already existing user should fail. Player count should remain the same, and skill levels should not be changed.
+
+| Script | player management driver |
+| reject duplicate on player | !-JohnJohn-! | 
+| reject duplicate on player | Julie |
+| note | Make sure that all still works after the duplicate |
+| ensure | add player | Tina  | with skill | advanced       |
+| check  | player count | >$players |
+
+!-PlayerManagementDriver.cs-!
+{{{using GameManagement;
+
+namespace GameManagementTest
+{
+    public class PlayerManagementDriver
+    {
+        public static bool AddPlayerWithSkill(string playerName, string skillLevel)
+        {
+            var player = new Player(playerName, skillLevel);
+            return StaticGame.Players.Add(player);
+        }
+
+        public static bool ClearPlayers()
+        {
+            StaticGame.Players.Clear();
+            return PlayerCount() == 0;
+        }
+
+        public static int PlayerCount() => StaticGame.Players.Count;
+
+        public static string PlayerIfSkill(string playerName)
+        {
+            var player = StaticGame.Players.FindOnName(playerName);
+            return player == null ? "null" : player.Level;
+        }
+
+        public static bool RemovePlayer(string playerName)
+        {
+            var player = StaticGame.Players.FindOnName(playerName);
+            if (player == null) return false;
+            StaticGame.Players.Remove(player);
+            return true;
+        }
+
+        public static bool UpdateSkillForPlayerTo(string playerName, string skillLevel)
+        {
+            var player = StaticGame.Players.FindOnName(playerName);
+            if (player == null) return false;
+            player.Level = skillLevel;
+            return true;
+        }
+    }
+}
+}}}
+
+!-StaticGame.cs-!
+{{{using GameManagement;
+
+namespace GameManagementTest
+{
+    // singleton instance for all fixture tables to share
+    public abstract class StaticGame
+    {
+        private static readonly PlayerCollection PlayerCollection = new PlayerCollection();
+        public static PlayerCollection Players => PlayerCollection;
+    }
+}
+}}}
