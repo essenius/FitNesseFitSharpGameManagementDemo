@@ -1,5 +1,5 @@
 # Introduction 
-This repo contains a demo suite on how to use FitNesse with FitSharp. It include FitNesse test pages as well as 
+This repo contains a demo suite on how to use FitNesse with FitSharp and C# fixtures. It include FitNesse test pages as well as 
 corresponding C# fixtures, and gives examples of all the different FitNesse table types and associated fixtures.
 
 # Getting Started
