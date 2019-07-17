@@ -11,10 +11,13 @@ FitNesseRoot/TemplateLibrary/
 FitNesseRoot/files/testResults/
 FitNesseRoot/PageFooter
 FitNesseRoot/PageHeader
+FitNesseRoot/FrontPage
+FitNesseRoot/content.txt
+FitNesseRoot/properties.xml
+FitNesseRoot/properties
 FitNesseRoot/**/*.zip
 Plugins/
 Fixtures/
-TestOutput/
 
 # User-specific files
 *.suo
