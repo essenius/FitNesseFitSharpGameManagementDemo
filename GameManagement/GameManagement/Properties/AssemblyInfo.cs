@@ -1,4 +1,4 @@
-﻿// Copyright 2013-2019 Rik Essenius
+﻿// Copyright 2013-2020 Rik Essenius
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License. You may obtain a copy of the License at
@@ -17,7 +17,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Rik Essenius")]
 [assembly: AssemblyProduct("GameManagement")]
-[assembly: AssemblyCopyright("Copyright © Rik Essenius 2013-2019")]
+[assembly: AssemblyCopyright("Copyright © Rik Essenius 2013-2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -25,4 +25,4 @@ using System.Runtime.InteropServices;
 
 [assembly: Guid("b3ef4ade-b8cb-4793-9434-2298f335c0a2")]
 
-[assembly: AssemblyVersion("2.0.0")]
+[assembly: AssemblyVersion("2.0.1")]

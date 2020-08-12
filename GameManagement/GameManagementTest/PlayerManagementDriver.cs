@@ -1,4 +1,4 @@
-﻿// Copyright 2013-2019 Rik Essenius
+﻿// Copyright 2013-2020 Rik Essenius
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License. You may obtain a copy of the License at
@@ -17,6 +17,7 @@ namespace GameManagementTest
     [SuppressMessage("ReSharper", "ClassNeverInstantiated.Global", Justification = "FitSharp can't find static classes"),
      SuppressMessage("ReSharper", "MemberCanBePrivate.Global", Justification = "Entry point for FitSharp"),
      SuppressMessage("ReSharper", "UnusedMember.Global", Justification = "Entry point for FitSharp")]
+    [SuppressMessage("Design", "CA1052:Static holder types should be Static or NotInheritable", Justification = "FitSharp can't find static classes")]
     public class PlayerManagementDriver
     {
         public static bool AddPlayerWithSkill(string playerName, string skillLevel)

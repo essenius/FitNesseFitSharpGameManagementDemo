@@ -1,4 +1,4 @@
-﻿// Copyright 2013-2019 Rik Essenius
+﻿// Copyright 2013-2020 Rik Essenius
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License. You may obtain a copy of the License at
@@ -22,6 +22,10 @@ namespace GameManagementTest
         public object Get(string requestedSkill) =>
             PlayerIfSkill(_player) == requestedSkill ? "X" : string.Empty;
 
+
+
+        [SuppressMessage("Usage", "CA1801:Review unused parameters", Justification = "FitNesse interface spec, and name not needed")]
+        [SuppressMessage("Style", "IDE0060:Remove unused parameter", Justification = "FitNesse interface spec")]
         public void Set(string name, string value) => _player = value;
     }
 }

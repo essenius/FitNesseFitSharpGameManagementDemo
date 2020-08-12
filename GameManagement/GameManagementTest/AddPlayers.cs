@@ -1,4 +1,4 @@
-﻿// Copyright 2013-2019 Rik Essenius\
+﻿// Copyright 2013-2020 Rik Essenius\
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License. You may obtain a copy of the License at
@@ -13,15 +13,15 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace GameManagementTest
 {
-    [SuppressMessage("ReSharper", "UnusedMember.Global", Justification = "FitSharp interface spec"), 
+    [SuppressMessage("ReSharper", "UnusedMember.Global", Justification = "FitSharp interface spec"),
      SuppressMessage("ReSharper", "MemberCanBePrivate.Global", Justification = "FitSharp interface spec"),
      SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Global", Justification = "FitSharp interface spec")]
     public class AddPlayers
     {
         private bool _success;
-        public string PlayerName { set; private get; }
+        public string PlayerName { get; set; }
 
-        public string Skill { set; private get; }
+        public string Skill { get; set; }
 
         public void Execute() => _success = PlayerManagementDriver.AddPlayerWithSkill(PlayerName, Skill);
 
