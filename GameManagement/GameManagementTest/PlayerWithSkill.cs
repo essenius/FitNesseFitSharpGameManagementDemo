@@ -10,12 +10,10 @@
 // See the License for the specific language governing permissions and limitations under the License.
 
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
 namespace GameManagementTest
 {
-    [SuppressMessage("ReSharper", "UnusedMember.Global", Justification = "Entry point for FitSharp")]
     public class PlayersWithSkill
     {
         private readonly string _level;

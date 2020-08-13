@@ -9,15 +9,10 @@
 // distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and limitations under the License.
 
-using System.Diagnostics.CodeAnalysis;
 using GameManagement;
 
 namespace GameManagementTest
 {
-    [SuppressMessage("ReSharper", "ClassNeverInstantiated.Global", Justification = "FitSharp can't find static classes"),
-     SuppressMessage("ReSharper", "MemberCanBePrivate.Global", Justification = "Entry point for FitSharp"),
-     SuppressMessage("ReSharper", "UnusedMember.Global", Justification = "Entry point for FitSharp")]
-    [SuppressMessage("Design", "CA1052:Static holder types should be Static or NotInheritable", Justification = "FitSharp can't find static classes")]
     public class PlayerManagementDriver
     {
         public static bool AddPlayerWithSkill(string playerName, string skillLevel)

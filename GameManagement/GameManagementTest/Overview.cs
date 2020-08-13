@@ -10,20 +10,14 @@
 // See the License for the specific language governing permissions and limitations under the License.
 
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 
 namespace GameManagementTest
 {
     using RowList = List<string>;
     using TableList = List<List<string>>;
 
-    [SuppressMessage("ReSharper", "UnusedMember.Global", Justification = "FitNesse interface spec"),
-     SuppressMessage("ReSharper", "UnusedParameter.Global", Justification = "FitNesse interface spec")]
     public class Overview
     {
-        [SuppressMessage("Usage", "CA1801:Review unused parameters", Justification = "FitNesse interface spec")]
-        [SuppressMessage("Performance", "CA1822:Mark members as static", Justification = "FitNesse interface spec")]
-        [SuppressMessage("Style", "IDE0060:Remove unused parameter", Justification = "FitNesse interface spec")]
         public TableList DoTable(TableList table) => new TableList
         {
             new RowList {"report:Number of players", "pass:" + StaticGame.Players.Count}

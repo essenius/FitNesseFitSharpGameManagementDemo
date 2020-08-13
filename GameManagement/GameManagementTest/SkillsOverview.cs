@@ -14,7 +14,6 @@ using static GameManagementTest.PlayerManagementDriver;
 
 namespace GameManagementTest
 {
-    [SuppressMessage("ReSharper", "UnusedMember.Global", Justification = "Entry point for FitSharp")]
     public class SkillsOverview
     {
         private string _player;
@@ -22,10 +21,6 @@ namespace GameManagementTest
         public object Get(string requestedSkill) =>
             PlayerIfSkill(_player) == requestedSkill ? "X" : string.Empty;
 
-
-
-        [SuppressMessage("Usage", "CA1801:Review unused parameters", Justification = "FitNesse interface spec, and name not needed")]
-        [SuppressMessage("Style", "IDE0060:Remove unused parameter", Justification = "FitNesse interface spec")]
         public void Set(string name, string value) => _player = value;
     }
 }
