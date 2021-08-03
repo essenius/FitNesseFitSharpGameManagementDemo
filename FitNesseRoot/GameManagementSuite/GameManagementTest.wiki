@@ -1,0 +1,23 @@
+|player management driver                      |
+|check |player    |Steve    |if skill    |beginner    |
+|note  |Check that non-existing players are handled OK|
+|check |player    |Bart     |if skill    |null        |
+
+
+|players with skill|intermediate|
+|Player                                |
+|Bill                                  |
+|Julie                                 |
+
+|player management driver                             |
+|$players=|player count                                         |
+|ensure   |remove player          |Steve                        |
+|reject   |remove player          |non-existing user            |
+|check    |player count           |<$players                    |
+|ensure   |update skill for player|Julie            |to|advanced|
+|reject   |update skill for player|non-existing user|to|advanced|
+
+|players with skill|advanced|
+|Player                            |
+|John                              |
+|Julie                             |

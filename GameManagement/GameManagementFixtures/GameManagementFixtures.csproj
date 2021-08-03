@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -10,5 +10,16 @@
     <Copyright>Copyright © Rik Essenius 2013-2021</Copyright>
     <RepositoryUrl>https://github.com/essenius/FitNesseFitSharpGameManagementDemo</RepositoryUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GameManagement\GameManagement.csproj" />
+    <ProjectReference Include="..\SupportFunctions\SupportFunctions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 
 </Project>

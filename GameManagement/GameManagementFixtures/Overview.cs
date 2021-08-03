@@ -9,21 +9,20 @@
 //   is distributed on an "AS IS" BASIS WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 //   See the License for the specific language governing permissions and limitations under the License.
 
-namespace GameManagement
-{
-    public class Player
-    {
-        public Player(string playerName, string skillLevel)
-        {
-            Name = playerName;
-            Level = skillLevel;
-        }
 
-        public string Name { get; }
-        public string Level { get; set; }
-        public override bool Equals(object obj) =>
-            obj is Player other && Name.Equals(other.Name);
-        public override int GetHashCode() => Name.GetHashCode();
+using System.Collections.Generic;
+
+namespace GameManagementFixtures
+{
+    using TableList = List<List<string>>;
+
+    public class Overview
+    {
+        public static TableList DoTable(TableList table) => new TableList
+        {
+            new List<string>{ "report:Number of players",
+                "pass:" + StaticGame.Players.Count }
+        };
     }
 }
 

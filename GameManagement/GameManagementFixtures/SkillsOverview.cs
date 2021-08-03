@@ -9,21 +9,18 @@
 //   is distributed on an "AS IS" BASIS WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 //   See the License for the specific language governing permissions and limitations under the License.
 
-namespace GameManagement
-{
-    public class Player
-    {
-        public Player(string playerName, string skillLevel)
-        {
-            Name = playerName;
-            Level = skillLevel;
-        }
 
-        public string Name { get; }
-        public string Level { get; set; }
-        public override bool Equals(object obj) =>
-            obj is Player other && Name.Equals(other.Name);
-        public override int GetHashCode() => Name.GetHashCode();
+using static GameManagementFixtures.PlayerManagementDriver;
+
+namespace GameManagementFixtures
+{
+    public class SkillsOverview
+    {
+        private string _player;
+
+        public object Get(string requestedSkill) =>
+            PlayerIfSkill(_player) == requestedSkill ? "X" : string.Empty;
+
+        public void Set(string name, string value) => _player = value;
     }
 }
-

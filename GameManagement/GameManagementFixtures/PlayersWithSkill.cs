@@ -9,21 +9,24 @@
 //   is distributed on an "AS IS" BASIS WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 //   See the License for the specific language governing permissions and limitations under the License.
 
-namespace GameManagement
+
+using System.Collections.Generic;
+using System.Linq;
+
+namespace GameManagementFixtures
 {
-    public class Player
+    public class PlayersWithSkill
     {
-        public Player(string playerName, string skillLevel)
+        readonly string _level;
+
+        public PlayersWithSkill(string skillLevel)
         {
-            Name = playerName;
-            Level = skillLevel;
+            _level = skillLevel;
         }
 
-        public string Name { get; }
-        public string Level { get; set; }
-        public override bool Equals(object obj) =>
-            obj is Player other && Name.Equals(other.Name);
-        public override int GetHashCode() => Name.GetHashCode();
+        public List<object> Query() => StaticGame.Players.WithLevel(_level)
+            .Select(p => new List<object> { new List<object> { "Player", p.Name } })
+            .Cast<object>().ToList();
     }
 }
 

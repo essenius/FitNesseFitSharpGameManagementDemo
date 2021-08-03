@@ -1,3 +1,3 @@
-!path "GameManagementTest.dll"
+!define FIXTURE_FOLDER {GameManagement}
 
 !contents -R2 -g -p -f -h

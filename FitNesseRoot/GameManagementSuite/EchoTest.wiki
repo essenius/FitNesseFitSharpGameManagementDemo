@@ -1,6 +1,6 @@
----
-Test
----
-!|script                                      |
+!|library       |
+|CommonFunctions|
+
+|script  |player management driver            |
 |$player=|echo  |Julie                        |
 |check   |player|$player|if skill|intermediate|

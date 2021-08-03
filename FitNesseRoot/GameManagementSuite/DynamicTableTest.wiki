@@ -1,10 +1,6 @@
----
-Test
----
 |skills overview                              |
 |Player Name|beginner?|intermediate?|advanced?|
 |Steve      |X        |             |         |
 |Julie      |         |X            |         |
 |Bill       |         |X            |         |
 |John       |         |             |X        |
-
