@@ -6,7 +6,7 @@
     <AnalysysMode>AllEnabledByDefault</AnalysysMode>
     <Version>3.0.0</Version>
     <Authors>Rik Essenius</Authors>
-    <Company />
+    <Description>Demo FitNesse/FitSharp fixtures</Description>
     <Copyright>Copyright © Rik Essenius 2013-2021</Copyright>
     <RepositoryUrl>https://github.com/essenius/FitNesseFitSharpGameManagementDemo</RepositoryUrl>
   </PropertyGroup>
