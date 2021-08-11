@@ -10,7 +10,7 @@ corresponding C# fixtures, and gives examples of all the different FitNesse tabl
 nuget install fitsharp -OutputDirectory C:\Apps -ExcludeVersion
 ```
 4. Clone the repo to a local folder (```C:\Data\FitNesseDemo```)
-1. If you took a different folder for FitSharp, update plugins.properties to point to the right folder
+1. If you took a different folder for FitSharp, update ```plugins.properties``` to point to the right folder
 1. Build the solution ```GameManagement```
 1. Start FitNesse with the root repo folder as the data folder, and the assembly folder as the current directory:
 ```
