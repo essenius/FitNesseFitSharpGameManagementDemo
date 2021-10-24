@@ -12,6 +12,6 @@ Differences are:
 * Run the suite: Open a browser and enter the URL http://localhost:8080/GameManagementSuite?suite
 
 # Tutorial
-See the [Wiki](../wiki)
+See the [Wiki](../../wiki)
 # Contribute
 Enter an issue or provide a pull request. 
