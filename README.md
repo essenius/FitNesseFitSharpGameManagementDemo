@@ -20,6 +20,8 @@ cd GameManagement
 dotnet new sln
 dotnet new classlib --framework "net5.0" -o GameManagement
 dotnet sln add GameManagement
+dotnet new classlib --framework "net5.0" -o GameManagementFixtures
+dotnet sln add GameManagementFixtures
 ```
 
 # Tutorial
