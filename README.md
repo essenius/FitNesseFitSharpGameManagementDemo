@@ -6,7 +6,7 @@ corresponding C# fixtures, and gives examples of all the different FitNesse tabl
 The steps to install are very similar to that of installing the [FibonacciDemo](../../../FitNesseFitSharpFibonacciDemo).
 
 Differences are:
-* If you want to use the end product rather than following the tutorial, then download the code as a zip file and extract the contents of the folder `FitNesseFitSharpGameManagementDemo-master` into %LOCALAPPDATA%\FitNesse. If you want to build up the tests and fixtures yourself, you can create your own C# .Net 5 libarary solution instead in the `GameManagement` folder (see below).
+* If you want to use the end product rather than following the tutorial, then download the code as a zip file and extract the contents of the folder `FitNesseFitSharpGameManagementDemo-master` into `%LOCALAPPDATA%\FitNesse`. If you want to build up the tests and fixtures yourself, you can create your own C# .Net 5 libarary solution instead in the `GameManagement` folder (see below).
 * Build command becomes: `dotnet build -configuration release %LOCALAPPDATA%\FitNesse\GameManagement\GameManagement.sln`
 * Go to folder: `cd /D %LOCALAPPDATA%\FitNesse\GameManagement\GameManagementFixtures\bin\release\net5.0`
 * Start FitNesse
