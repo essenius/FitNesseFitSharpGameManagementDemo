@@ -12,7 +12,7 @@ Differences are:
 * Start FitNesse
 * Run the suite: Open a browser and enter the URL http://localhost:8080/GameManagementSuite?suite
 
-# Setting up your own fixture solution (instead of downloading it)
+## Setting up your own fixture solution (instead of downloading it)
 ```
 cd /d %LOCALAPPDATA\FitNesse
 mkdir GameManagement
