@@ -18,9 +18,9 @@ cd /d %LOCALAPPDATA\FitNesse
 mkdir GameManagement
 cd GameManagement
 dotnet new sln
-dotnet new classlib --framework "net5.0" --output GameManagement
+dotnet new classlib --framework "net6.0" --output GameManagement
 dotnet sln add GameManagement
-dotnet new classlib --framework "net5.0" --output GameManagementFixtures
+dotnet new classlib --framework "net6.0" --output GameManagementFixtures
 dotnet sln add GameManagementFixtures
 ```
 
