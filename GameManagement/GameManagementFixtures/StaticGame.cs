@@ -1,4 +1,4 @@
-﻿// Copyright 2013-2021 Rik Essenius
+﻿// Copyright 2013-2024 Rik Essenius
 //
 //   Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file 
 //   except in compliance with the License. You may obtain a copy of the License at
@@ -15,7 +15,6 @@ namespace GameManagementFixtures
 {
     public abstract class StaticGame
     {
-        public static PlayerCollection Players { get; } = new PlayerCollection();
+        public static PlayerCollection Players { get; } = new();
     }
 }
-

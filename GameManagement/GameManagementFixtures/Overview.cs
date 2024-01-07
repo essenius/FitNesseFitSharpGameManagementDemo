@@ -1,4 +1,4 @@
-﻿// Copyright 2013-2021 Rik Essenius
+﻿// Copyright 2013-2024 Rik Essenius
 //
 //   Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file 
 //   except in compliance with the License. You may obtain a copy of the License at
@@ -18,7 +18,7 @@ namespace GameManagementFixtures
 
     public class Overview
     {
-        public static TableList DoTable(TableList table) => new TableList
+        public static TableList DoTable(TableList table) => new()
         {
             new List<string>{ "report:Number of players",
                 "pass:" + StaticGame.Players.Count }

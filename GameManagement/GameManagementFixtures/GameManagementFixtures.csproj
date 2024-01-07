@@ -4,10 +4,10 @@
     <TargetFramework>net6.0</TargetFramework>
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
     <AnalysysMode>AllEnabledByDefault</AnalysysMode>
-    <Version>3.1.0</Version>
+    <Version>3.1.1</Version>
     <Authors>Rik Essenius</Authors>
     <Description>Demo FitNesse/FitSharp fixtures</Description>
-    <Copyright>Copyright © Rik Essenius 2013-2021</Copyright>
+    <Copyright>Copyright © Rik Essenius 2013-2024</Copyright>
     <RepositoryUrl>https://github.com/essenius/FitNesseFitSharpGameManagementDemo</RepositoryUrl>
   </PropertyGroup>
 
