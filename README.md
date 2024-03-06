@@ -1,9 +1,9 @@
- ![workflow badge](https://github.com/essenius/FitNesseFitSharpGameManagementDemo/actions/workflows/game-management-demo.yml/badge.svg)
-# Introduction 
+# Game Management Demo ![workflow badge](actions/workflows/game-management-demo.yml/badge.svg)
+## Introduction 
 This repo contains a demo suite on how to use FitNesse with FitSharp and C# fixtures. It include FitNesse test pages as well as 
 corresponding C# fixtures, and gives examples of all the different FitNesse table types and associated fixtures.
 
-# Installation
+## Installation
 The steps to install are very similar to that of installing the [FibonacciDemo](../../../FitNesseFitSharpFibonacciDemo).
 
 Differences are:
@@ -13,7 +13,7 @@ Differences are:
 * Start FitNesse
 * Run the suite: Open a browser and enter the URL http://localhost:8080/GameManagementSuite?suite
 
-## Setting up your own fixture solution (instead of downloading it)
+### Setting up your own fixture solution (instead of downloading it)
 ```
 cd /d %LOCALAPPDATA\FitNesse
 mkdir GameManagement
@@ -25,8 +25,8 @@ dotnet new classlib --framework "net6.0" --output GameManagementFixtures
 dotnet sln add GameManagementFixtures
 ```
 
-# Tutorial
+## Tutorial
 See the [Wiki](../../wiki)
 
-# Contribute
+## Contribute
 Enter an issue or provide a pull request. 
