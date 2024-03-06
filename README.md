@@ -1,4 +1,4 @@
-# Game Management Demo ![workflow badge](actions/workflows/game-management-demo.yml/badge.svg)
+# Game Management Demo ![workflow badge](../../actions/workflows/game-management-demo.yml/badge.svg)
 ## Introduction 
 This repo contains a demo suite on how to use FitNesse with FitSharp and C# fixtures. It include FitNesse test pages as well as 
 corresponding C# fixtures, and gives examples of all the different FitNesse table types and associated fixtures.
