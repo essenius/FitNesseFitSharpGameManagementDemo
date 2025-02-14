@@ -7,7 +7,7 @@
     <Version>3.2.0</Version>
     <Authors>Rik Essenius</Authors>
     <Description>Demo FitNesse/FitSharp fixtures</Description>
-    <Copyright>Copyright © Rik Essenius 2013-2024</Copyright>
+    <Copyright>Copyright © Rik Essenius 2013-2025</Copyright>
     <RepositoryUrl>https://github.com/essenius/FitNesseFitSharpGameManagementDemo</RepositoryUrl>
   </PropertyGroup>
 
